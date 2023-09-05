@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = function (opts) {
     const LRU = require('lru-cache');
     const pubsub = require('../pubsub');
@@ -66,8 +67,7 @@ module.exports = function (opts) {
         const data = lruCache.get(key);
         if (data === undefined) {
             cache.misses += 1;
-        }
-        else {
+        } else {
             cache.hits += 1;
         }
         return data;
