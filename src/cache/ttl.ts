@@ -1,5 +1,4 @@
 import TTLCache, { Options } from '@isaacs/ttlcache';
-// import pubsub from '../pubsub'; // Commented out as it's not used
 
 interface CacheOptions extends Options<unknown, unknown> {
     name: string;
